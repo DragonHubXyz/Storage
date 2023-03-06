@@ -419,6 +419,7 @@ function OrionLib:MakeNotification(NotificationConfig)
 				Size = UDim2.new(15, -30, 0, 20),
 				Position = UDim2.new(0, 30, 0, 0),
 				Font = Enum.Font.Cartoon,
+                TextSize = 15.000,
 				Name = "Title"
 			}),
 			SetProps(MakeElement("Label", NotificationConfig.Content, 14), {
@@ -426,7 +427,7 @@ function OrionLib:MakeNotification(NotificationConfig)
 				Position = UDim2.new(0, 0, 0, 25),
 				Font = Enum.Font.Cartoon,
 				Name = "Content",
-				AutomaticSize = Enum.AutomaticSize.Y,
+				TextSize = 20.000
 				TextColor3 = Color3.fromRGB(200, 200, 200),
 				TextWrapped = true
 			})
